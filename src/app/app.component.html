@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+
+      <h1 class="center">
+          {{title}}
+      </h1>
+      <div class="todo-list">
+        <form (submit)="addTodo($event)">
+          <div class="input-group">
+
+            <input type="text" class="form-control" placeholder="Search for..." (keyup.enter)="newTodo=''" [(ngModel)]="newTodo ">
+            <span class="input-group-btn ">
+            <button class="btn btn-primary " type="submit" [disabled]="newTodo==''">Add</button>
+          </span>
+
+          </div>
+        </form>
+        <!-- /input-group -->
+
+        <div *ngIf="todos != ''">
+          <br>
+          <ul class="list-group ">
+
+            <li class="list-group-item " *ngFor="let todo of todos; let i=index" [class.completed]="todo.complete == true">
+              <a class="badge" (click)="delTodo(i)">X</a> {{todo.item}}
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
