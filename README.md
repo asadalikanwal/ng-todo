@@ -2,12 +2,18 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.9.
 
-## Development server
+## Prerequisites / Dependencies
+Angular cli is run via Node 4 or greater
+https://ember-cli.com/user-guide/#watchman (optional but highly recommanded, It is used to watch code and refresh automatically)
+
+## Installation:
+Angular cli can be easily installed by following command
+```
+npm install -g angular-cli
+```
+
+## Development server / Run the app
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/route/class`.
 
 ## Build
 
