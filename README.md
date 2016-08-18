@@ -4,6 +4,7 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 
 ## Prerequisites / Dependencies
 Angular cli is run via Node 4 or greater
+
 https://ember-cli.com/user-guide/#watchman (optional but highly recommanded, It is used to watch code and refresh automatically)
 
 ## Installation:
